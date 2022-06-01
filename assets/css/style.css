@@ -18,7 +18,6 @@ window.onscroll = () => {
     // Obtenemos la posicion del scroll en pantall
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    console.log("sreoll",scroll)
     if(scroll >= 0 && scroll < 777){
         navProfile.style.color = '#19b3e6';
     }
