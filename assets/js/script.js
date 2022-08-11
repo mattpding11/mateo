@@ -1,6 +1,5 @@
 
 // Referencias HTML
-
 const body = document.querySelector('#hiddenBody');
 const onLoad = document.querySelector('#onLoad');
 const navProfile = document.querySelector('#navProfile');
@@ -22,11 +21,11 @@ window.onscroll = () => {
         navProfile.style.color = '#19b3e6';
     }
 
-    if(scroll >= 700 && scroll <= 1880){
+    if(scroll >= 700 && scroll <= 1600){
         navSkills.style.color = '#19b3e6';
     }
 
-    if(scroll > 1880 && scroll <= 4185){
+    if(scroll > 1600 && scroll <= 4185){
         navProject.style.color = '#19b3e6';
     }
 
