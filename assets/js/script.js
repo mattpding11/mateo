@@ -25,11 +25,11 @@ window.onscroll = () => {
         navSkills.style.color = '#19b3e6';
     }
 
-    if(scroll > 1600 && scroll <= 4185){
+    if(scroll > 1600 && scroll <= 4041){
         navProject.style.color = '#19b3e6';
     }
 
-    if(scroll >= 4032){
+    if(scroll > 4041){
         navContact.style.color = '#19b3e6';
     }
 
