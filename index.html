@@ -1,390 +1,411 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mateo Peñaranda | Full Stack Developer</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <!--CSS imagehover-->
-    <link rel="stylesheet" href="assets/css/imagehover.min.css">
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-        
-    <link rel="icon" href="favicon.png" type="image/png">
-</head>
-<body id="hiddenBody">
+    <!DOCTYPE html>
+    <html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mateo Peñaranda | Full Stack Developer</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <!--CSS imagehover-->
+        <link rel="stylesheet" href="assets/css/imagehover.min.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+            
+        <link rel="icon" href="favicon.png" type="image/png">
+    </head>
+    <body id="hiddenBody">
 
-    <div id="onLoad" class="onLoadCenter">
-        <div class="lds-hourglass">
+        <div id="onLoad" class="onLoadCenter">
+            <div class="lds-hourglass">
+            </div>
         </div>
-    </div>
-  
-    <header id="header">
-        <nav>
-            <ul>
-              <li><a href="#profile"><strong>MPD</strong></a></li>
-            </ul>
-            <ul>
-              <li><a id="navProfile" href="#profile">Who am i ?</a></li>
-              <li><a id="navSkills" href="#skills">Skills</a></li>
-              <li><a id="navProject" href="#project">Projects</a></li>
-              <li><a id="navContact" href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
-
-    <main class="container">
-
-<!--         <section id="profile">
-            <img id="photo" src="assets/img/perfil.jpeg" alt="" width="200px">
-        </section> -->
-
-        <section >
-            <h1 id="profile">Hi!!!</h1>
-            <p>I'm <strong>Mateo Peñaranda</strong>, I study <strong>Systems Engineering</strong> and I'm currently in my last semester, I already have work experience, I've worked as a freelance too, I'm a geek, I love technology and learn new things every day, my specialty is <strong>JavaScript</strong>  I love this language and I always use it, I also have good communication and collaborative skills.</p>
-            <p>
-                <a download="Hoja de vida - Mateo Peñaranda" href="./assets/pdf/Mateo_Peñaranda_Hoja_de_vida.pdf" role="button"> <i class="fa-solid fa-file-arrow-down"></i>
-                    Download CV in Spanish</a>
-            </p>
-            <p>
-                <a download="CV - Mateo Peñaranda" href="./assets/pdf/Mateo_Peñaranda_CV.pdf" role="button"> <i class="fa-solid fa-file-arrow-down"></i>
-                    Download CV</a>
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="grid">
-                <div>
-                    <i class="fa-brands fa-js-square fa-5x"></i>
-                    <br>
-                    <p>JavaScript</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code fa-5x"></i>
-                    <br>
-                    <p> &nbsp; HTML5</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-css3 fa-5x"></i>
-                    <br>
-                    <p> &nbsp; CSS3</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-node-js fa-5x"></i>
-                    <br>
-                    <p>Node.js</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="grid">
-                <div>
-                    <img src="assets/img/typescript.png" alt="" width="100px">
-                    <br>
-                    <p>TypeScript</p>
-                </div>
-                <div>
-                    <img src="assets/img/mongodb.png" alt="" width="105px">
-                    <br>
-                    <p>MongoDB</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-node-js fa-5x"></i>
-                    <br>
-                    <p>Express.js</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-vuejs fa-5x"></i>
-                    <br>
-                    <p>Vue.js</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="grid">
-                <div>
-                    <i class="fa-brands fa-react fa-5x"></i>
-                    <br>
-                    <p>&nbsp; React</p>
-                </div>
-                <!-- <div>
-                    <i class="fa-brands fa-angular fa-5x"></i>
-                    <br>
-                    <p>Angular</p>
-                </div> -->
-                <div>
-                    <i class="fa-brands fa-git-alt fa-5x"></i>
-                    <br>
-                    <p>&nbsp;&nbsp; Git</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-npm fa-5x"></i>
-                    <br>
-                    <p>npm</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python fa-5x"></i>
-                    <br>
-                    <p>Python</p>
-                </div>
-            </div>
-            <br>
-            <br>
-        </section>
-
-        <section id="project">
-            <h2>Projects</h2>
-            <article> 
-                     <div class="grid">
-                    <div>
-                        <p style="padding-left: 60px;">Buscador de Gifs con React y CRA</p>
-                        <div class="imgHover">
-                            <img class="imghvr-fade" src="https://res.cloudinary.com/drbotbbjb/image/upload/v1660252122/Screenshot_215_qqszpr.png"  alt="">
     
-                        </div>
-                        <br>
-                        <p class="projectButtons">
-                            <a disabled role="button" href="" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            Open Repository</a>
+        <header id="header">
+            <nav>
+                <ul>
+                <li><a href="#profile"><strong>MPD</strong></a></li>
+                </ul>
+                <ul>
+                <li><a id="navProfile" href="#profile">Who am i ?</a></li>
+                <li><a id="navSkills" href="#skills">Skills</a></li>
+                <li><a id="navProject" href="#project">Projects</a></li>
+                <li><a id="navContact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                            <a role="button" href="https://givemegif.up.railway.app/" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Open App</a>
-                        </p>
-                    </div>
-                    <div>
-                        <p style="padding-left: 60px;">Creador de tareas con React y Vite</p>
-                        <div class="imgHover">
-                            <img class="imghvr-fade" src="https://user-images.githubusercontent.com/56937766/184550377-7ec6a6de-1dfa-4bbc-a8ab-8e1c5597c663.png"  alt="create tasks">
-                        </div>
-                        <br>
-                        <p class="projectButtons">
-                            <a  role="button" href="https://github.com/mattpding11/react-create-tasks" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            Open Repository</a>
-                            <a role="button" href="https://react-create-tasks.up.railway.app" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Open App</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div>
-                        <p style="padding-left: 60px;">Programa de colas con tickets - Nodejs</p>
-                        <div class="imgHover">
-                            <img class="imghvr-fade" src="https://camo.githubusercontent.com/4bf9df865040d589ffa34dccffa25285dc83727ee4511030bf2f0c0eee41bb46/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333938313930382f53637265656e73686f745f3135365f7968783367382e706e67"  alt="">
-                        </div>
-                        <br>
-                        <p class="projectButtons">
-                            <a role="button" href="https://github.com/mattpding11/node-sockets-colas" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            Open Repository</a>
+        <main class="container">
 
-                            <a role="button" href="https://node-sockets-colas.up.railway.app/" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Open App</a>
-                        </p>
-                    </div>
+    <!--         <section id="profile">
+                <img id="photo" src="assets/img/perfil.jpeg" alt="" width="200px">
+            </section> -->
 
-                    <div>
-                        <p style="padding-left: 60px;">Appi Web IoT</p>
-                        <div class="imgHover">
-                            <img class="imghvr-fade" src="https://camo.githubusercontent.com/c09d0ff7b33561c073c5932bbac70b9e38f5f15a1e8d62a84995458977aa4f58/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333731353736312f53637265656e73686f745f39355f6b386f6331752e706e67"  alt="">
-    
-                        </div>
-                        <br>
-                        <p class="projectButtons">
-                            <a role="button" href="https://github.com/mattpding11/appi-web-IoT" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            Open Repository</a>
-
-                            <a disabled role="button" href="#" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Open App</a>
-                        </p>
-                    </div>
-
-                </div>
-                <hr>
-                <br>
-                <div class="grid">
-                    <div>
-                        <div>
-                            <p style="padding-left: 60px;">Web Chat con Socket.IO - Nodejs</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/97752278bebd75a918534dda41d37c342ab0c2512f3517f7e788c9cd4c999e08/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333938363437352f53637265656e73686f745f3136305f78386f6e79762e706e67"  alt="">
-        
-                            </div>
-                            <br>
-                            <p class="projectButtons">
-                                <a role="button" href="https://github.com/mattpding11/node-web-socket-chat" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                Open Repository</a>
-    
-                                <a role="button" href="https://node-web-socket-chat.up.railway.app/" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open App</a>
-                            </p>
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div>
-                            <p style="padding-left: 60px;">Pagina con Angular para crear portafolios</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/8d86a2bba8c61a402f56827f565da222edc093c390a71f3535c03f7a4909bf04/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333830363639322f53637265656e73686f745f3131335f757a706e76632e706e67"  alt="">
-        
-                            </div>
-                            <br>
-                            <p class="projectButtons">
-                                <a role="button" href="https://github.com/mattpding11/crear-portafolios-angular" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                Open Repository</a>
-    
-                                <a disabled role="button" href="#" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open App</a>
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <hr>
-                <br>
-
-                <div class="grid">
-                    <div>
-                        <div>
-                            <p style="padding-left: 60px;">CoviData con Vue</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/62fcbfe553af03fc5ec1e55dc1ec25e41c9513edbd1ab395ea8eb74412fa0e9d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333735393737392f53637265656e73686f745f3130355f6365646975722e706e67"  alt="">
-        
-                            </div>
-                            <br>
-                            <p class="projectButtons">
-                                <a role="button" href="https://github.com/mattpding11/covidata" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                Open Repository</a>
-    
-                                <a disabled role="button" href="#" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open App</a>
-                            </p>
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div>
-                            <p style="padding-left: 60px;">página web con JQuery</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/93106f6c6e7d42cbf1d826ab3f8f65c85e7ef0d9d5165533e376200dbfe0999c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333831353530332f53637265656e73686f745f3132335f6530763767762e706e67"  alt="">
-        
-                            </div>
-                            <br>
-                            <p class="projectButtons">
-                                <a role="button" href="https://github.com/mattpding11/proyecto-jquery" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                Open Repository</a>
-    
-                                <a disabled role="button" href="#" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open App</a>
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <hr>
-                <br>
-
-                <div class="grid">
-                    <div>
-                        <div>
-                            <p style="padding-left: 60px;">Aplicación Rest con NodeJS</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/5815d4a8f811113e98ecc66ed6b71541211b1d5310d08198a7aa8220f0b9d821/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333933383330382f53637265656e73686f745f3135315f6879757766322e706e67"  alt="">
-        
-                            </div>
-                            <br>
-                            <p class="projectButtons">
-                                <a role="button" href="https://github.com/mattpding11/node-rest-server" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                Open Repository</a>
-    
-                                <a disabled role="button" href="https://node-rest-server.up.railway.app/" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open App</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <p style="padding-right: 30px;">EasyThink - Proyecto de Investigacion de la Universidad</p>
-                            <div class="imgHover">
-                                <img class="imghvr-fade" src="https://res.cloudinary.com/drbotbbjb/image/upload/v1654087954/easythink_latml5.png"  alt="">
-                            </div>
-                            <br>
-                            <p style="padding-left:90px" class="projectButtons">
-                                <a  role="button" href="https://www.easythink.com.co" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                Open Web Portal</a>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <br>
-                <br>
-            <blockquote >
+            <section >
+                <h1 id="profile">Hi!!!</h1>
+                <p>I'm <strong>Mateo Peñaranda</strong>, I study <strong>Systems Engineering</strong> and I'm currently in my last semester, I already have work experience, I've worked as a freelance too, I'm a geek, I love technology and learn new things every day, my specialty is <strong>JavaScript</strong>  I love this language and I always use it, I also have good communication and collaborative skills.</p>
                 <p>
-                    <strong>Note.</strong> Here are just some of the projects, to see all the projects go to my <a target="_blank" href="https://github.com/mattpding11">GitHub here</a> 
+                    <a download="Hoja de vida - Mateo Peñaranda" href="./assets/pdf/Mateo_Peñaranda_Hoja_de_vida.pdf" role="button"> <i class="fa-solid fa-file-arrow-down"></i>
+                        Download CV in Spanish</a>
                 </p>
-                </blockquote>
-            </article>
-        </section>
+                <p>
+                    <a download="CV - Mateo Peñaranda" href="./assets/pdf/Mateo_Peñaranda_CV.pdf" role="button"> <i class="fa-solid fa-file-arrow-down"></i>
+                        Download CV</a>
+                </p>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You may contact me through the following links</p>
-            <br>
-            <div  align="center" class="grid">
-                <div>
-                    <a  style="text-decoration-line: none;" class="contrast linksContact" href="mailto:mateo_1999_7@outlook.es" >
-                        <i class="fa-solid fa-envelope fa-4x iconContact" ></i>  
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="grid">
+                    <div>
+                        <i class="fa-brands fa-js-square fa-5x"></i>
                         <br>
-                    </a>
-                </div>
-                <div>
-                    <a style="text-decoration-line: none;" class="contrast linksContact" href="https://github.com/mattpding11" target="_blank">
-                        <i class="fa-brands fa-github fa-4x iconContact"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code fa-5x"></i>
                         <br>
-                    </a>
-                </div>
-                <div>
-                    <a style="text-decoration-line: none;" class="contrast linksContact" href="https://www.linkedin.com/in/mateo-pe%C3%B1aranda-diaz-fullstack-developer/" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-4x iconContact" ></i>  
+                        <p> &nbsp; HTML5</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3 fa-5x"></i>
                         <br>
-                    </a>
+                        <p> &nbsp; CSS3</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-node-js fa-5x"></i>
+                        <br>
+                        <p>Node.js</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <p title="Huu! huu!">🦉</p>
-    </main>
+                <br>
+                <br>
+                <div class="grid">
+                    <div>
+                        <img src="assets/img/typescript.png" alt="" width="100px">
+                        <br>
+                        <p>TypeScript</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/mongodb.png" alt="" width="105px">
+                        <br>
+                        <p>MongoDB</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-node-js fa-5x"></i>
+                        <br>
+                        <p>Express.js</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-vuejs fa-5x"></i>
+                        <br>
+                        <p>Vue.js</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="grid">
+                    <div>
+                        <i class="fa-brands fa-react fa-5x"></i>
+                        <br>
+                        <p>&nbsp; React</p>
+                    </div>
+                    <!-- <div>
+                        <i class="fa-brands fa-angular fa-5x"></i>
+                        <br>
+                        <p>Angular</p>
+                    </div> -->
+                    <div>
+                        <i class="fa-brands fa-git-alt fa-5x"></i>
+                        <br>
+                        <p>&nbsp;&nbsp; Git</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-npm fa-5x"></i>
+                        <br>
+                        <p>npm</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python fa-5x"></i>
+                        <br>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </section>
 
-    <footer>
-        <hr>
-        <p style="cursor: pointer;"><img src="favicon.png" width="30px" title="loki"> MPD &copy; 2023</p>
-    </footer>
+            <section id="project">
+                <h2>Projects</h2>
+                <article> 
+                        <div class="grid">
+                        <div>
+                            <p style="padding-left: 60px;">Buscador de Gifs con React y CRA</p>
+                            <div class="imgHover">
+                                <img class="imghvr-fade" src="https://res.cloudinary.com/drbotbbjb/image/upload/v1660252122/Screenshot_215_qqszpr.png"  alt="">
+        
+                            </div>
+                            <br>
+                            <p class="projectButtons">
+                                <a disabled role="button" href="#" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                Open Repository</a>
+
+                                <a role="button" href="https://givemegif.up.railway.app/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Open App</a>
+                            </p>
+                        </div>
+                        <div>
+                            <p style="padding-left: 60px;">Creador de tareas con React y Vite</p>
+                            <div class="imgHover">
+                                <img class="imghvr-fade" src="https://user-images.githubusercontent.com/56937766/184550377-7ec6a6de-1dfa-4bbc-a8ab-8e1c5597c663.png"  alt="create tasks">
+                            </div>
+                            <br>
+                            <p class="projectButtons">
+                                <a  role="button" href="https://github.com/mattpding11/react-create-tasks" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                Open Repository</a>
+                                <a role="button" href="https://react-create-tasks.up.railway.app" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Open App</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <p style="padding-left: 60px;">Programa de colas con tickets - Nodejs</p>
+                            <div class="imgHover">
+                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/4bf9df865040d589ffa34dccffa25285dc83727ee4511030bf2f0c0eee41bb46/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333938313930382f53637265656e73686f745f3135365f7968783367382e706e67"  alt="">
+                            </div>
+                            <br>
+                            <p class="projectButtons">
+                                <a role="button" href="https://github.com/mattpding11/node-sockets-colas" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                Open Repository</a>
+
+                                <a role="button" href="https://node-sockets-colas.up.railway.app/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Open App</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p style="padding-left: 60px;">API de Rick & Morty con Nodejs y Vue</p>
+                            <div class="imgHover">
+                                <img class="imghvr-fade" src="https://res.cloudinary.com/drbotbbjb/image/upload/v1674086309/Screenshot_361_ipn4vu.png"  alt="">
+                            </div>
+                            <br>
+                            <p class="projectButtons">
+                                <a disabled role="button" href="" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                Open Repository</a>
+
+                                <a role="button" href="https://pickle-rick-front-production.up.railway.app" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Open App</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="grid">
+                        <div>
+                            <div>
+                                <p style="padding-left: 60px;">Web Chat con Socket.IO - Nodejs</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://camo.githubusercontent.com/97752278bebd75a918534dda41d37c342ab0c2512f3517f7e788c9cd4c999e08/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333938363437352f53637265656e73686f745f3136305f78386f6e79762e706e67"  alt="">
+            
+                                </div>
+                                <br>
+                                <p class="projectButtons">
+                                    <a role="button" href="https://github.com/mattpding11/node-web-socket-chat" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    Open Repository</a>
+        
+                                    <a role="button" href="https://node-web-socket-chat.up.railway.app/" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open App</a>
+                                </p>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <div>
+                                <p style="padding-left: 60px;">Pagina con Angular para crear portafolios</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://camo.githubusercontent.com/8d86a2bba8c61a402f56827f565da222edc093c390a71f3535c03f7a4909bf04/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333830363639322f53637265656e73686f745f3131335f757a706e76632e706e67"  alt="">
+            
+                                </div>
+                                <br>
+                                <p class="projectButtons">
+                                    <a role="button" href="https://github.com/mattpding11/crear-portafolios-angular" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    Open Repository</a>
+        
+                                    <a disabled role="button" href="#" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open App</a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+
+                    <div class="grid">
+                        <div>
+                            <div>
+                                <p style="padding-left: 60px;">CoviData con Vue</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://camo.githubusercontent.com/62fcbfe553af03fc5ec1e55dc1ec25e41c9513edbd1ab395ea8eb74412fa0e9d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333735393737392f53637265656e73686f745f3130355f6365646975722e706e67"  alt="">
+            
+                                </div>
+                                <br>
+                                <p class="projectButtons">
+                                    <a role="button" href="https://github.com/mattpding11/covidata" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    Open Repository</a>
+        
+                                    <a disabled role="button" href="#" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open App</a>
+                                </p>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <div>
+                                <p style="padding-left: 60px;">página web con JQuery</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://camo.githubusercontent.com/93106f6c6e7d42cbf1d826ab3f8f65c85e7ef0d9d5165533e376200dbfe0999c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333831353530332f53637265656e73686f745f3132335f6530763767762e706e67"  alt="">
+            
+                                </div>
+                                <br>
+                                <p class="projectButtons">
+                                    <a role="button" href="https://github.com/mattpding11/proyecto-jquery" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    Open Repository</a>
+        
+                                    <a disabled role="button" href="#" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open App</a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+
+                    <div class="grid">
+                        <div>
+                            <div>
+                                <p style="padding-left: 60px;">Aplicación Rest con NodeJS</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://camo.githubusercontent.com/5815d4a8f811113e98ecc66ed6b71541211b1d5310d08198a7aa8220f0b9d821/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333933383330382f53637265656e73686f745f3135315f6879757766322e706e67"  alt="">
+            
+                                </div>
+                                <br>
+                                <p class="projectButtons">
+                                    <a role="button" href="https://github.com/mattpding11/node-rest-server" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    Open Repository</a>
+        
+                                    <a disabled role="button" href="https://node-rest-server.up.railway.app/" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open App</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <p style="padding-right: 30px;">EasyThink - Proyecto de Investigacion de la Universidad</p>
+                                <div class="imgHover">
+                                    <img class="imghvr-fade" src="https://res.cloudinary.com/drbotbbjb/image/upload/v1654087954/easythink_latml5.png"  alt="">
+                                </div>
+                                <br>
+                                <p style="padding-left:90px" class="projectButtons">
+                                    <a  role="button" href="https://www.easythink.com.co" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Open Web Portal</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+
+                    <div class="grid">
+                        <div>
+                            <p style="padding-left: 60px;">Appi Web IoT</p>
+                            <div class="imgHover">
+                                <img class="imghvr-fade" src="https://camo.githubusercontent.com/c09d0ff7b33561c073c5932bbac70b9e38f5f15a1e8d62a84995458977aa4f58/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6472626f7462626a622f696d6167652f75706c6f61642f76313635333731353736312f53637265656e73686f745f39355f6b386f6331752e706e67"  alt="">
+        
+                            </div>
+                            <br>
+                            <p class="projectButtons">
+                                <a role="button" href="https://github.com/mattpding11/appi-web-IoT" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                Open Repository</a>
+
+                                <a disabled role="button" href="#" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                Open App</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                <blockquote >
+                    <p>
+                        <strong>Note.</strong> Here are just some of the projects, to see all the projects go to my <a target="_blank" href="https://github.com/mattpding11">GitHub here</a> 
+                    </p>
+                    </blockquote>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>You may contact me through the following links</p>
+                <br>
+                <div  align="center" class="grid">
+                    <div>
+                        <a  style="text-decoration-line: none;" class="contrast linksContact" href="mailto:mateo_1999_7@outlook.es" >
+                            <i class="fa-solid fa-envelope fa-4x iconContact" ></i>  
+                            <br>
+                        </a>
+                    </div>
+                    <div>
+                        <a style="text-decoration-line: none;" class="contrast linksContact" href="https://github.com/mattpding11" target="_blank">
+                            <i class="fa-brands fa-github fa-4x iconContact"></i>
+                            <br>
+                        </a>
+                    </div>
+                    <div>
+                        <a style="text-decoration-line: none;" class="contrast linksContact" href="https://www.linkedin.com/in/mateo-pe%C3%B1aranda-diaz-fullstack-developer/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-4x iconContact" ></i>  
+                            <br>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <p title="Huu! huu!">🦉</p>
+        </main>
+
+        <footer>
+            <hr>
+            <p style="cursor: pointer;"><img src="favicon.png" width="30px" title="loki"> MPD &copy; 2023</p>
+        </footer>
 
 
-    <!--Script-->
-    <script src="https://kit.fontawesome.com/87699357a7.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+        <!--Script-->
+        <script src="https://kit.fontawesome.com/87699357a7.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+    </html>
