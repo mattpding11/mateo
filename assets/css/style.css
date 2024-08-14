@@ -9,6 +9,7 @@ html{
 }
 
 body{
+  padding-top: 50px;
   position: absolute;
   padding-bottom: 200px;
   min-width: 100vh;
