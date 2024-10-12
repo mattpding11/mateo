@@ -3,7 +3,7 @@
     background-color: #1d1e26
 } */
 
-/*Desplazamiento suaves del la barra de desplazamiento*/
+/* Desplazamiento suaves del la barra de desplazamiento */
 html{
   scroll-behavior: smooth;
 }
