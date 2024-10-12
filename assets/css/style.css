@@ -26,6 +26,7 @@ body{
     position: fixed;
     background-color: rgba(17, 25, 31, 0.888);
     z-index: 1; /*Adelante alfrente de todos los elementos*/
+    width: 100%;
 }
 nav{
     background-color: rgba(17, 25, 31, 0.888);;
