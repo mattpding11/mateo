@@ -484,12 +484,15 @@
 
         <footer>
             <hr>
-            <p style="cursor: pointer;"><img src="favicon.png" width="30px" title="loki"> MPD &copy; 2025</p>
+            <p style="cursor: pointer;"><img src="favicon.png" width="30px" title="loki"> MPD &copy; <span id="yearCopyright"></span></p>
         </footer>
 
         <!--Script-->
-        <script src="https://kit.fontawesome.com/87699357a7.js" crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
+                <script src="https://kit.fontawesome.com/87699357a7.js" crossorigin="anonymous"></script>
+                <script src="assets/js/script.js"></script>
+                <script>
+                    document.getElementById('yearCopyright').textContent = new Date().getFullYear();
+                </script>
     </body>
 
     </html>
